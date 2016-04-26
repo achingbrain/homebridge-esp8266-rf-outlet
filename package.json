@@ -1,0 +1,41 @@
+{
+  "name": "homebridge-esp8266-rf-outlet",
+  "version": "0.0.0",
+  "description": "Homebridge plugin for RF outlets",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achingbrain/homebridge-gardendisco.git"
+  },
+  "author": "Alex Potsides",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/achingbrain/homebridge-gardendisco/issues"
+  },
+  "homepage": "https://github.com/achingbrain/homebridge-gardendisco#readme",
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  },
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "mocha": "^2.2.5",
+    "pre-commit": "^1.0.10",
+    "sinon": "^1.15.3",
+    "standard": "^6.0.7"
+  },
+  "dependencies": {
+    "@achingbrain/ssdp": "^1.0.0",
+    "color": "^0.11.1",
+    "request": "^2.67.0"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
