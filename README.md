@@ -18,6 +18,17 @@ As of the time of writing the ESP8266SSDP library has a bug in it.  Once platfor
 
 1. Update the `configureNetwork()` method in [main.cpp](./src/main.cpp) with your network credentials, then flash your ESP8266 board with the image (build with the Platform.io IDE).
 2. Connect the hardware up and apply power!
-3. Install homebridge-rf-switch:
-        npm install -g homebridge-rf-switch
-4. Edit your homebridge configuration and start the server
+3. Install homebridge-esp8266-rf-outlet:
+        npm install -g homebridge-esp8266-rf-outlet
+4. Edit your homebridge configuration to add the `esp8266-rf-outlet` platform:
+        {
+          "bridge": {
+            // ... bridge settings
+          },
+          "platforms": [
+            {
+              "platform": "esp8266-rf-outlet"
+            }
+          ]
+        }
+5. Start the server
