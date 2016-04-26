@@ -1,6 +1,6 @@
 {
   "name": "homebridge-esp8266-rf-outlet",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Homebridge plugin for RF outlets",
   "main": "index.js",
   "scripts": {
